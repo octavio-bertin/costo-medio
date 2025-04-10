@@ -58,10 +58,15 @@
       };
 
       Plotly.newPlot('plot', [traceLP, traceCP], {
-        margin: { t: 30, b: 100 },
+        margin: { t: 30, b: 120 },
         xaxis: { title: 'Cantidad producida (q)' },
         yaxis: { title: 'Costo medio', range: [0, 40] },
-        legend: { orientation: 'h', y: -0.4 },
+        legend: {
+          orientation: 'h',
+          x: 0.5,
+          y: -0.3,
+          xanchor: 'center'
+        }
       }, {responsive: true});
     }
 
